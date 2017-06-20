@@ -791,7 +791,7 @@ public class CropOverlayView extends View {
             RectF rect = mCropWindowHandler.getRect();
             rect.inset(w, w);
 
-            float cornerOffset = (cornerWidth - lineWidth) / 2;
+            float cornerOffset = lineWidth * 3;
             float cornerExtension = cornerWidth / 2 + cornerOffset;
 
             // Top left
